@@ -1,0 +1,23 @@
+{
+  "registry_version": 2,
+  "entries": [
+    {
+      "millesime": 2022,
+      "geographie": 2024,
+      "prefix": "C22_",
+      "min_skill_version": "1.0.0",
+      "files": [
+        {
+          "zone": "metropole",
+          "url": "https://www.insee.fr/fr/statistiques/fichier/8647008/base-ic-couples-familles-menages-2022_csv.zip"
+        },
+        {
+          "zone": "com",
+          "url": "https://www.insee.fr/fr/statistiques/fichier/8647008/base-ic-couples-familles-menages-2022-com_csv.zip",
+          "code_prefixes": ["975", "977", "978"]
+        }
+      ]
+    }
+  ],
+  "_doc": "Registre des bases INSEE Couples-Familles-Menages par IRIS, maintenu a la main, servi en raw depuis GitHub : le skill le lit a chaque execution pour pointer vers le dernier millesime SANS reinstallation. Ajouter UNE entree par nouveau millesime (INSEE diffuse l'annee n en geographie n+2). prefix = prefixe des variables (ex. C22_). min_skill_version = version minimale du skill capable de lire l'entree ; l'incrementer uniquement en cas de changement cassant du schema. files = liste des fichiers (zip CSV) couvrant chacun une zone geographique ; le skill les essaie tous (mode auto) jusqu'a trouver la commune, sans aucune hypothese codee en dur sur la repartition geographique -> ajouter une zone (ex. mayotte) = ajouter un fichier ici, aucun changement de code."
+}

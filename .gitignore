@@ -1,0 +1,16 @@
+.claude
+.idea
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Datasets non versionnés (CSV IRIS ~21 Mo, BPE) — cache local
+data/
+*.csv
+*.parquet
+
+# … mais on versionne les petits échantillons CSV de test (mode hors-ligne)
+!skills/*/tests/fixtures/*.csv
