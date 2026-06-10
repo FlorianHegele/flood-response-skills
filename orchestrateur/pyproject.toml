@@ -1,0 +1,18 @@
+[project]
+name = "flood-response-orchestrateur"
+version = "0.1.0"
+description = "Orchestrateur LangGraph + sous-agents experts au-dessus des skills crue (flood-response-skills)."
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0",
+    "langchain-anthropic>=0.3",
+    "langchain-mistralai>=0.2",
+    "langchain-ollama>=0.2",
+    "langgraph>=0.2",
+    "python-dotenv>=1.0",
+]
+
+# Installation (cf. cours, chap. 0/1) :
+#   cd orchestrateur && uv sync
+# puis configurer .env (copier .env.example) et lancer :
+#   uv run python main.py --commune "Alès"

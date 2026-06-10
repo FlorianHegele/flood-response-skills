@@ -7,6 +7,10 @@ venv/
 __pycache__/
 *.pyc
 
+# Secrets (clés API de l'orchestrateur)
+.env
+!.env.example
+
 # Datasets non versionnés (CSV IRIS ~21 Mo, BPE) — cache local
 data/
 *.csv
